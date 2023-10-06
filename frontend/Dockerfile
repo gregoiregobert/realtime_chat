@@ -15,3 +15,4 @@ RUN npm run build
 EXPOSE 4200
 
 #npm i --save angular
+#npx ng add @angular/material
