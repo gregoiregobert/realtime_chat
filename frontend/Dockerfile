@@ -14,5 +14,4 @@ RUN npm run build
 
 EXPOSE 4200
 
-#npm i --save @nestjs/config 
-#npm i --save @nestjs/typeorm typeorm pg 
+#npm i --save angular
