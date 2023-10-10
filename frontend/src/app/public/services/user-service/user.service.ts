@@ -16,11 +16,11 @@ export class UserService {
 
   create(user: UserI): Observable<UserI> {
 	return this.http.post<UserI>('api/users', user).pipe(
-		tap((createdUser: UserI) => this.snackbar.open('User ${createdUser.username} creatded succefully', 'Close' ,{
+		tap((createdUser: UserI) => this.snackbar.open(`User ${createdUser.username} creatded succefully`, 'Close' ,{
 			duration: 2000, horizontalPosition: 'right', verticalPosition: 'top'
 		} )),
 		catchError(e => {
-			this.snackbar.open('User could not be created, due to: ${e.error.mesasage}', 'Close', {
+			this.snackbar.open(`User could not be created, due to: ${e.error.message}`, 'Close', {
 				duration: 5000, horizontalPosition: 'right', verticalPosition: 'top'
 			})
 			return throwError(e)
