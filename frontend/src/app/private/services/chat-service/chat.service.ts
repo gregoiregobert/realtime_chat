@@ -23,7 +23,7 @@ export class ChatService {
 
   createRoom() {
 	const user2: UserI = {
-		id: 3
+		id: 1
 	};
 
 	const room: RoomI = {

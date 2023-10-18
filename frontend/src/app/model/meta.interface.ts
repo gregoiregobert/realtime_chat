@@ -1,7 +1,7 @@
 export interface Meta {
-	totaleItems: number;
+	totalItems: number;
 	itemCount: number;
-	itemPerPages: number;
-	totalPage: number;
+	itemsPerPages: number;
+	totalPages: number;
 	currentPage: number;
 }
