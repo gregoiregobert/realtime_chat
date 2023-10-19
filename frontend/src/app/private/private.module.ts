@@ -12,14 +12,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { CreateRoomComponent } from './components/create-room/create-room.component'; 
-import {MatChipsModule} from '@angular/material/chips';
-import {MatAutocompleteModule} from '@angular/material/autocomplete'; 
-import {MatIconModule} from '@angular/material/icon';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatAutocompleteModule } from '@angular/material/autocomplete'; 
+import { MatIconModule } from '@angular/material/icon';
+import { SelectUsersComponent } from './components/select-users/select-users.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    CreateRoomComponent
+    CreateRoomComponent,
+    SelectUsersComponent
   ],
   imports: [
     CommonModule,
