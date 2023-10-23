@@ -1,4 +1,4 @@
-FROM node:latest AS development
+FROM node:19 AS development
 
 WORKDIR /chat/frontend/src/app
 
