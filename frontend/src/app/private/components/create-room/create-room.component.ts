@@ -22,10 +22,10 @@ export class CreateRoomComponent {
 	}
 
 	create() {
-		if (this.form.valid)
+		if (this.form.valid) {
 			this.chatService.createRoom(this.form.getRawValue());
 			this.router.navigate(["../dashboard"], {relativeTo: this.activateRoute});
-		
+		}
 	}
 
 	initUser(user: UserI) {
